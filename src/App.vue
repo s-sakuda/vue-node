@@ -14,7 +14,7 @@ export default {
 		HelloWorld,
 	},
 	async created() {
-		this.$axios.get('http://localhost:3000/api/hello').then((res) => {
+		this.$axios.get('/hello').then((res) => {
 			console.log(res.data)
 		})
 	},
