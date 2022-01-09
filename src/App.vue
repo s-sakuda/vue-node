@@ -13,6 +13,11 @@ export default {
 	components: {
 		HelloWorld,
 	},
+	async created() {
+		this.$axios.get('http://localhost:3000/api/hello').then((res) => {
+			console.log(res.data)
+		})
+	},
 }
 </script>
 
